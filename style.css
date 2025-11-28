@@ -1,0 +1,28 @@
+﻿* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; background: #222; color: #fff; position: sticky; top: 0; z-index: 1000; }
+.navbar .logo { font-size: 24px; font-weight: bold; }
+.nav-links { list-style: none; display: flex; align-items: center; }
+.nav-links li { margin: 0 15px; position: relative; }
+.nav-links a { text-decoration: none; color: #fff; font-weight: 500; }
+.nav-links .dropdown-content { display: none; position: absolute; background: #333; top: 30px; left: 0; list-style: none; padding: 10px 0; border-radius: 5px; }
+.nav-links .dropdown-content li { margin: 0; }
+.nav-links .dropdown-content a { padding: 10px 20px; display: block; }
+.nav-links .dropdown:hover .dropdown-content { display: block; }
+.burger { display: none; cursor: pointer; flex-direction: column; }
+.burger div { width: 25px; height: 3px; background: #fff; margin: 5px; }
+.hero { height: 100vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #fff; }
+.hero h1 { font-size: 60px; margin-bottom: 20px; }
+.hero p { font-size: 24px; margin-bottom: 30px; }
+.btn { padding: 12px 25px; background: #ff4b2b; color: #fff; border: none; border-radius: 25px; cursor: pointer; text-decoration: none; }
+section { padding: 80px 50px; text-align: center; }
+section h2 { font-size: 36px; margin-bottom: 30px; color: #222; }
+.about p { max-width: 700px; margin: auto; font-size: 18px; color: #555; }
+.card-container { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+.card { background: #f4f4f4; padding: 20px; border-radius: 10px; width: 300px; transition: transform 0.3s; cursor: pointer; }
+.card:hover { transform: translateY(-10px); }
+.contact form { display: flex; flex-direction: column; max-width: 500px; margin: auto; }
+.contact input, .contact textarea { margin-bottom: 15px; padding: 12px; border-radius: 5px; border: 1px solid #ccc; }
+.contact button { padding: 12px; background: #ff4b2b; color: #fff; border: none; border-radius: 25px; cursor: pointer; }
+footer { background: #222; color: #fff; padding: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; }
+footer .social a { color: #fff; margin-left: 15px; text-decoration: none; }
+@media(max-width: 768px){ .nav-links { display: none; flex-direction: column; background: #222; position: absolute; top: 60px; right: 0; width: 200px; } .nav-links li { margin: 10px 0; } .burger { display: flex; } }
