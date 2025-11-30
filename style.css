@@ -1,23 +1,18 @@
-﻿/* ---------------------- */
-/* GLOBAL STYLES */
-/* ---------------------- */
+﻿/* Global Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
     line-height: 1.6;
-    scroll-behavior: smooth;
-    background-color: #f0f2f5;
+    background-color: #f4f4f4;
     color: #222;
 }
 
-/* ---------------------- */
-/* NAVBAR */
-/* ---------------------- */
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -28,7 +23,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    transition: all 0.3s ease;
 }
 
 .navbar .logo {
@@ -51,11 +45,6 @@ body {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #ff4b2b;
 }
 
 .nav-links .dropdown-content {
@@ -67,17 +56,6 @@ body {
     list-style: none;
     padding: 10px 0;
     border-radius: 5px;
-    min-width: 150px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    opacity: 0;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-}
-
-.nav-links .dropdown:hover .dropdown-content {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .nav-links .dropdown-content li {
@@ -90,11 +68,14 @@ body {
     color: #fff;
 }
 
+.nav-links .dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .burger {
     display: none;
     cursor: pointer;
     flex-direction: column;
-    transition: all 0.3s ease;
 }
 
 .burger div {
@@ -102,24 +83,9 @@ body {
     height: 3px;
     background: #fff;
     margin: 5px;
-    transition: all 0.3s ease;
 }
 
-.burger.toggle div:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-
-.burger.toggle div:nth-child(2) {
-    opacity: 0;
-}
-
-.burger.toggle div:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* ---------------------- */
-/* HERO SECTION */
-/* ---------------------- */
+/* Hero Section */
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://source.unsplash.com/1600x900/?technology') no-repeat center center/cover;
@@ -129,19 +95,16 @@ body {
     align-items: center;
     text-align: center;
     color: #fff;
-    transition: all 0.5s ease;
 }
 
 .hero h1 {
     font-size: 60px;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
 }
 
 .hero p {
     font-size: 24px;
     margin-bottom: 30px;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
 
 .btn {
@@ -152,25 +115,21 @@ body {
     border-radius: 25px;
     cursor: pointer;
     text-decoration: none;
-    transition: background 0.3s ease;
 }
 
 .btn:hover {
     background: #ff784e;
 }
 
-/* ---------------------- */
-/* SECTIONS */
-/* ---------------------- */
+/* Sections */
 section {
     padding: 80px 50px;
     text-align: center;
-    transition: all 0.5s ease;
 }
 
 /* About Section */
 .about {
-    background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+    background-color: #fff;
     color: #222;
 }
 
@@ -183,12 +142,8 @@ section {
 
 /* Projects Section */
 .projects {
-    background: linear-gradient(135deg, #ffffff 0%, #f0f0f0 100%);
+    background-color: #f9f9f9;
     color: #222;
-}
-
-.projects h2 {
-    margin-bottom: 40px;
 }
 
 .card-container {
@@ -201,11 +156,11 @@ section {
 .card {
     background: #fff;
     color: #222;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 20px;
+    border-radius: 10px;
     width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
@@ -214,12 +169,9 @@ section {
     box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
-/* ---------------------- */
-/* CONTACT SECTION */
-/* ---------------------- */
+/* Contact Section */
 .contact {
-    background: #f9f9f9;
-    color: #222;
+    background-color: #fff;
 }
 
 .contact form {
@@ -235,7 +187,6 @@ section {
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 16px;
 }
 
 .contact button {
@@ -245,20 +196,17 @@ section {
     border: none;
     border-radius: 25px;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 .contact button:hover {
     background: #ff784e;
 }
 
-/* ---------------------- */
-/* FOOTER */
-/* ---------------------- */
+/* Footer */
 footer {
     background: #222;
     color: #fff;
-    padding: 20px 50px;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -268,16 +216,13 @@ footer .social a {
     color: #fff;
     margin-left: 15px;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 footer .social a:hover {
     color: #ff4b2b;
 }
 
-/* ---------------------- */
-/* RESPONSIVE DESIGN */
-/* ---------------------- */
+/* Responsive */
 @media(max-width: 768px){
     .nav-links {
         display: none;
@@ -294,18 +239,4 @@ footer .social a:hover {
     .burger {
         display: flex;
     }
-}
-
-/* ---------------------- */
-/* SECTION FADE-IN ANIMATION */
-/* ---------------------- */
-.section-active {
-    opacity: 1;
-    transform: translateY(0);
-    transition: all 1s ease;
-}
-
-section {
-    opacity: 0;
-    transform: translateY(20px);
 }
